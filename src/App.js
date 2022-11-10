@@ -5,7 +5,7 @@ import router from './Router/Routes/Routes';
 
 function App() {
   return (
-    <div className="w-75 mx-auto">
+    <div className="bg-sky-200">
      <RouterProvider router={router}></RouterProvider>
     </div>
   );
