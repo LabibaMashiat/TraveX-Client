@@ -39,7 +39,7 @@ const Login = () => {
           </label>
           <input name='password' type="password" placeholder="password" className="input input-bordered bg-slate-200" required />
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover text-black">Forgot password?</a>
+            <a href="#password" className="label-text-alt link link-hover text-black">Forgot password?</a>
           </label>
         </div>
         <div className="form-control mt-6">
