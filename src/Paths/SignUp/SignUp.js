@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import img1 from '../../images-11/SignInUp/login.jpg';
 
 const SignUp = () => {
+    const{createUser}=useContext(AuthContext);
     const handleSignUp=event=>{
         event.preventDefault();
         const form =event.target;
         const email=form.email.value;
         const password=form.password.value;
         console.log(email,password);
+
+        createUser(email,password)
+        .then(result=>{
+            const user=result.user;
+            console.log(user);
+        })
+        .catch(err=>console.error(err))
+
     }
     return (
         <div className="hero min-h-screen bg-white">
@@ -24,19 +34,19 @@ const SignUp = () => {
                 <label className="label">
                   <span className="label-text text-black">Name</span>
                 </label>
-                <input name='text' type="text" placeholder="name" className="input input-bordered bg-slate-200" required/>
+                <input name='text' type="text" placeholder="name" className="input input-bordered bg-slate-200 text-black" required/>
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-black">Email</span>
                 </label>
-                <input name='email' type="email" placeholder="email" className="input input-bordered bg-slate-200" required/>
+                <input name='email' type="email" placeholder="email" className="input input-bordered bg-slate-200 text-black" required/>
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-black">Password</span>
                 </label>
-                <input name='password' type="password" placeholder="password" className="input input-bordered bg-slate-200" required/>
+                <input name='password' type="password" placeholder="password" className="input input-bordered bg-slate-200 text-black" required/>
               </div>
               <div className="form-control mt-6">
                 <button type='submit' className="btn btn-primary">SignUp</button>

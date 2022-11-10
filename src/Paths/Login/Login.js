@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../../images-11/SignInUp/login.jpg';
 import { FaGoogle} from 'react-icons/fa';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
+    const{login,providerLogin}=useContext(AuthContext);
+    const createProvider= new GoogleAuthProvider()
     const handleLogin=event=>{
         event.preventDefault();
         const form =event.target;
         const email=form.email.value;
         const password=form.password.value;
         console.log(email,password);
+
+        login(email,password)
+        .then(result=>{
+            const user=result.user;
+            console.log(user);
+        })
+        .catch(err=>console.error(err));
+
+
+    }
+    const handleGoogleSubmit=()=>{
+        providerLogin(createProvider)
+        .then(result=>{
+            const user=result.user;
+        })
+        .catch(err=>console.error(err));
     }
     return (
         <div className="hero min-h-screen bg-white">
@@ -18,7 +38,7 @@ const Login = () => {
      
       <img src={img1} alt="" />
       <div>
-      <button className="btn btn-success w-3/4 mx-auto">
+      <button onClick={handleGoogleSubmit} className="btn btn-success w-3/4 mx-auto">
         <FaGoogle className='mr-4 h-12 w-6'></FaGoogle>
         Sign In with Google
       </button>
