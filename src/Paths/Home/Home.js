@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HomeServices from '../HomeServices/HomeServices';
 import Carousel from './Carousel/Carousel';
 import Experiences from './Experiences/Experiences';
 import Guiders from './Guiders/Guiders';
+import {FaArrowRight} from 'react-icons/fa';
 
 const Home = () => {
     return (
         <div>
             <Carousel></Carousel>
+
             <div>
-                <Link to='/services'>
-                <button className='btn btn-secondary p-2'>View All</button>
+                <HomeServices></HomeServices>
+                <Link className='flex justify-between' to='/services'>
+                <button className='btn btn-secondary px-6 my-5 w-44 mx-10'>View All<FaArrowRight/></button>
+               
                 </Link>
             </div>
             <div className='my-5'>
