@@ -7,7 +7,6 @@ const HomeServices = () => {
         fetch('http://localhost:5000/homeServices')
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
             setHomeServices(data);
         })
     },[])

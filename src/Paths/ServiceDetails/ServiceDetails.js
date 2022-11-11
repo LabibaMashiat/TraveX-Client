@@ -20,9 +20,11 @@ const ServiceDetails = () => {
          </div>
          <div>
          <Link className='flex justify-between' to='/services'>
-                <button className='btn btn-secondary px-6'>View Other Services<FaArrowRight/></button>
-               
-         </Link>
+                <button className='btn btn-secondary px-6 w-56'>View Other Services<FaArrowRight/></button>
+          </Link>
+         <Link className='flex justify-between' to={`/reviews/${_id}`}>
+                <button className='btn btn-success px-6 w-56 mt-4'>View Reviews<FaArrowRight/></button>
+          </Link>
          </div>
         </div>
     );
