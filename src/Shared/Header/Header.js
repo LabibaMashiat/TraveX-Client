@@ -1,7 +1,15 @@
-import React from 'react';
+import { signOut } from 'firebase/auth';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
+    const{user,logout}=useContext(AuthContext);
+    const handleLogout=()=>{
+        logout()
+        .then(()=>{})
+        .catch(err=>console.error(err));
+    }
     return (
         <div className="navbar bg-pink-200 h-32">
   <div className="navbar-start">
@@ -15,8 +23,20 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to='/login' className="btn btn-success mx-4">Sign in</Link>
-    <Link to='/signUp' className="btn btn-primary">Sign up</Link>
+    {
+        user?.email? 
+        <>
+        <button onClick={handleLogout} className='btn btn-success mr-3'>Log Out</button>
+        <Link to='/myReviews' className='btn btn-primary mr-3'>My Reviews</Link>
+        <Link to='/services' className='btn btn-secondary'>Add Service</Link>
+        </>
+        :
+        <>
+        <Link to='/login' className="btn btn-success mx-4">Sign in</Link>
+        <Link to='/signUp' className="btn btn-primary">Sign up</Link>
+        </>
+    }
+   
   </div>
 </div>
     );

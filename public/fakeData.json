@@ -1,0 +1,56 @@
+[
+    {
+      "picture": "https://i.ibb.co/9vwdbGr/france.jpg",
+      "name": "France",
+      "service_id":"01",
+      "description": "As the world leader in travel experiences since 1947, we connect you to the real France in a way like no other. From the very first day, it will be easy to see why France attracts more visitors than any other country on Earth. An intoxicating blend of sweeping vineyards, romantic cities and quaint coastal villages, a French trip with TraveX can be as varied as a Bordeaux wine menu. We fill your tour of France with the many highlights of this country, taking in the soaring 8th century church of Mont St. Michel and saving time for the authentic scents at Fragonard Parfumerie. Back in Paris, we catch the iconic Moulin Rouge and devote an entire day to the breathtaking enormity of The Louvre museum. Live out the fairytale of an Audrey Hepburn film and experience an international reputation for sophisticated art, food and culture. With us, France will be every bit as wonderful as you dream it to be. Travel with us and unlock the infinite possibilities thanks to our exclusive TraveX Highlights.",
+      "price": "550$",
+      "rating": "4/5",
+      "package_duration":"3 days"
+    },
+    {
+      "picture": "https://i.ibb.co/k96pNWM/greece.jpg",
+      "name": "Greece",
+      "service_id":"02",
+      "description": "As the world leader in travel experiences since 1947, we connect you to the real Greece in a way like no other. The benchmark of vacation destinations, this idyllic country needs little introduction. Whitewashed buildings, flower-covered laneways and streets lined with alfresco cafes set the scene as we recline into the Greek way of life. Join us on a trip that will fulfil your travel dreams, whether you're looking for a sun-drenched escape as you sail Greece, a culturally stimulating experience filled with art and gastronomy or an informative trip that takes you deep into Greek history. With us as your guide, you'll discover endless coastlines, stand in awe at some of the world's oldest ruins and savor a rich cuisine that is the gateway to an ever-social culture. From Athens to the Aegean Sea, with charming villages and olive groves in between, a trip to Greece with TraveX will connect you to the soul of the country. Travel with us and unlock the infinite possibilities thanks to our exclusive TraveX Highlights.",
+      "price": "450$",
+      "rating": "4/5",
+      "package_duration":"3 days"
+    },
+    {
+      "picture": "https://i.ibb.co/9sDz0MV/italy.jpg",
+      "name": "Italy",
+      "service_id":"03",
+      "description": "As the world leader in travel experiences since 1947, we connect you to the real Italy in a way like no other. From the canals of Venice to the hills of Tuscany, we explore the pockets of Italy that make this country a classic. Though they may have been etched into travel brochures many times, with TraveX, you will peel back the layers and find there's so much more to love than pizza, pasta and picturesque sites. On a slow and simple day in Italy, you'll relax by the ocean flopped under an umbrella on the glamourous Isle of Capri. On an extravagant day, you could be shopping at Prada and dining on breaded veal cutlet in the fashion mecca of Milan. In the capital, alfresco lunch is in order after many hours strolling the Vatican City, Trevi Fountain and the Colosseum. With so many opportunities available here, there really is no quintessential Italian holiday. With TraveX, you will sample the very best the country has to offer, quickly understanding how a lifetime spent here could still leave you wanting more. Travel with us and unlock the infinite possibilities thanks to our exclusive TraveX Highlights.",
+      "price": "600$",
+      "rating": "5/5",
+      "package_duration":"2 days"
+    },
+    {
+      "picture": "https://i.ibb.co/F4kThmh/maldives.jpg",
+      "name": "Maldives",
+      "service_id":"04",
+      "description": "Maldives, in full Republic of Maldives, also called Maldive Islands, independent island country in the north-central Indian Ocean. It consists of a chain of about 1,200 small coral islands and sandbanks (some 200 of which are inhabited), grouped in clusters, or atolls.The islands extend more than 510 miles (820 km) from north to south and 80 miles (130 km) from east to west. The northernmost atoll is about 370 miles (600 km) south-southwest of the Indian mainland, and the central area, including the capital island of Male (Male), is about 400 miles (645 km) southwest of Sri Lanka.",
+      "price": "450$",
+      "rating": "4/5",
+      "package_duration":"3 days"
+    },
+    {
+      "picture": "https://i.ibb.co/r7XCwmZ/norway.jpg",
+      "name": "Norway",
+      "service_id":"05",
+      "description": "As the world leader in travel experiences since 1947, we connect you to the real Norway in a way like no other. Known for its remarkable landscapes and joyous, social people, we’ll guide you through the very best that trips to Norway have to offer. Our pace of travel gives you the time to absorb the wild setting and quirky cities, moving from the iconic to the unexpected without a hurry. Peppered around fjords, glaciers, lakes, natural fortresses and coastal islands, we will find cities that sparkle with Nordic charm. Learn of Viking history, indulge in obscure local delicacies and soak up a contemporary culture alive with film, music, theatre and art. Ride the funicular railway in Bergen and visit the many museums of Oslo to connect with the true heart of Norway. Travel with us and unlock the infinite possibilities thanks to our exclusive TraveX Highlights.",
+      "price": "500$",
+      "rating": "5/5",
+      "package_duration":"2 days"
+    },
+    {
+      "picture": "https://i.ibb.co/JrcjYpV/poland.jpg",
+      "name": "Poland",
+      "service_id":"06",
+      "description": "As the world leader in travel experiences since 1947, we connect you to the real Poland in a way like no other. Exploring Poland, we will quickly discover the remarkable survival this culture is built upon. Enduring rival empires, Soviet occupations and two world wars, its not surprising to find the people here enjoying their era of new-found freedom. We will hear Chopin play in the streets and find cafes alive with a new bohemian energy... an energy that will cement your affection for this country. On your Poland tour with TraveX, you will connect with proud people over heart-warming food and discover how the younger generation are reshaping this countrys future. The many monuments and museums here serve as a constant reminder of what the country has been through. From the urban hub of Warsaw to the picturesque villages scattered around the country, Poland proves that truly memorable moments are often found in the most unexpected places. Travel with us and unlock the infinite possibilities thanks to our exclusive TraveX Highlights.",
+      "price": "450$",
+      "rating": "4/5",
+      "package_duration":"3 days"
+    }
+  ]
