@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img1 from '../../images-11/SignInUp/login.jpg';
 import { FaGoogle} from 'react-icons/fa';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
@@ -7,6 +7,11 @@ import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const{login,providerLogin}=useContext(AuthContext);
+    const[error,setError]=useState('');
+    const navigate = useNavigate();
+    const location=useLocation();
+
+    const from= location.state?.from?.pathname || '/';
     const createProvider= new GoogleAuthProvider()
     const handleLogin=event=>{
         event.preventDefault();
@@ -19,8 +24,13 @@ const Login = () => {
             const user=result.user;
             console.log(user);
             form.reset();
+            setError('');
+            navigate(from,{replace : true})
         })
-        .catch(err=>console.error(err));
+        .catch(err=>{
+          console.error(err);
+          setError(err.message)
+        });
 
 
     }
@@ -67,6 +77,9 @@ const Login = () => {
         </div>
         <h1 className='text-black font-semi-bold'>Do not have any account yet? <Link to='/signUp'><u>SignUp</u></Link> now</h1>
       </form>
+      <h1 className=' text-red-600'>
+        {error}
+      </h1>
       
     </div>
   </div>

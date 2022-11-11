@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const AddService = () => {
+    const{services,setServices}=useContext(AuthContext);
+
     const handleAddService=(event)=>{
         event.preventDefault();
         const form=event.target;
@@ -32,8 +35,12 @@ const AddService = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data)
+            console.log(data);
             window.confirm('Service added successfully');
+            if(data.acknowledged){
+                const newService=[...services,addService];
+                setServices(newService);
+            }
             form.reset();
         })
         .catch(er=>console.error(er));

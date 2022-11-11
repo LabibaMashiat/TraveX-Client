@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import ViewServices from '../ViewServices/ViewServices';
 
 const Services = () => {
-    const[services,setServices]=useState([]);
+   const{services,setServices}=useContext(AuthContext);
     useEffect(()=>{
         fetch('http://localhost:5000/services')
         .then(res=>res.json())
@@ -10,7 +11,7 @@ const Services = () => {
             console.log(data);
             setServices(data);
         })
-    },[])
+    },[setServices])
     return (
         <div className='grid md:grid-cols-2 gap-6 justify-items-center my-5'>
             {
