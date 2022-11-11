@@ -28,7 +28,7 @@ const Header = () => {
         <>
         <button onClick={handleLogout} className='btn btn-success mr-3'>Log Out</button>
         <Link to='/myReviews' className='btn btn-primary mr-3'>My Reviews</Link>
-        <Link to='/services' className='btn btn-secondary'>Add Service</Link>
+        <Link to='/addServices' className='btn btn-secondary'>Add Service</Link>
         </>
         :
         <>
