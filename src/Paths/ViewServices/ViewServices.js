@@ -5,7 +5,7 @@ import img1 from '../../images-11/services/france.jpg'
 const ViewServices = ({service}) => {
     const{name,_id,picture,description,package_duration,price,rating}=service;
     return (
-        <div className=''>
+        <div>
             <div className="card w-96 bg-white shadow-xl">
   <figure><img src={picture} alt="" /></figure>
   <div className="card-body">
